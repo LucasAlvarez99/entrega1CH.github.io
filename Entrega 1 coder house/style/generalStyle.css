@@ -1,0 +1,510 @@
+/* Cuerpo general */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    background-color: #553636;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+p{
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer{
+    background-color: #797878;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;    
+}
+
+/* FIn cuepor general*/
+
+/* Cuerpo clases generales */
+.header-home{
+    background-color: rgb(158, 150, 150);
+}
+
+.imagen{
+    width: 50px;
+    height: 50px;  
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+.encabezado{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 20px;
+}
+
+.navegacion{
+    display: flex;
+    margin-left: auto;
+    color: rgb(180, 28, 28);
+}
+
+.navegador{
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu  {
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    list-style: none;
+}
+
+.cuerpo{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 900px; 
+    min-height: calc(100vh - 80px); 
+    padding: 80px 0 100px;
+    box-sizing: border-box;
+}
+
+/* FIn clases generales*/
+
+
+
+
+/*Cuerpo del index*/
+
+.h2-title-1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.h1-title{
+    font-size: 50px;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+.presentacion{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 30px;
+}
+.container-uno{
+    color: rgb(177, 175, 175);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b41c1c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn:hover {
+    background-color: #8a1515;
+}
+
+/* FIn index*/
+
+/*Cuerpo login*/
+
+.titulo-seccion{
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+
+.p-titulo{
+    margin: auto;
+    font-size: 40px;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn-2{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b41c1c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-2:hover {
+    background-color: #8a1515;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"] {
+    width: 260px;
+    padding: 10px 14px;
+    margin-bottom: 13px;
+    border: 2px solid #b41c1c;
+    border-radius: 6px;
+    background: #fff8f8;
+    font-size: 16px;
+    color: #553636;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="password"]:focus {
+    border-color: #8a1515;
+    box-shadow: 0 0 0 2px #b41c1c33;
+}
+
+/* FIn login*/
+
+/* Cuerpo del producto*/
+
+.menu-productos{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+.menu-productos a{
+    margin: 0 10px;
+    color: #b41c1c;
+    font-size: 20px;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+.titulo-productos{
+    margin: 10px 0 10px 0;
+    font-size: 40px;
+    font-family: 'Savate:ital';
+}
+
+.productos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+.producto {
+  display: flex;
+  align-items: flex-start;
+  background: #997373;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0002;
+  padding: 20px;
+  gap: 24px;
+}
+.producto-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background-color: #9e3838;
+}
+.producto-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.producto-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.producto-nombre {
+  font-size: 22px;
+  color: #b41c1c;
+  margin: 0;
+}
+
+.toggle {
+  background: #b41c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.toggle:hover {
+  background: #8a1515;
+}
+
+.toggle-desc {
+  background: #b41c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.toggle-desc:hover {
+  background: #8a1515;
+}
+.producto-desc {
+  display: inline-block;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: top;
+  transition: max-width 0.4s cubic-bezier(.4,2,.6,1), padding 0.3s;
+  background: #330606;
+  color: #f8f8f8;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 0 0;
+  border-radius: 6px;
+}
+.producto-desc.open {
+  max-width: 350px;
+  padding: 10px 16px;
+  white-space: normal;
+}
+
+.descripcion-p{
+    font-family: 'Savate:ital';
+    font-size: 20px;
+    color: #f8f8f8;
+    margin: 0;
+}
+
+/* FIn producto*/
+
+/* Cuerpo del perfil */
+
+.menu-profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+.menu-profile a{
+    margin: 0 10px;
+    color: #b41c1c;
+    font-size: 20px;
+    font-family: 'UnifrakturCook', cursive;
+}
+.perfil-main {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #c49999;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #0002;
+  padding: 32px 24px;
+}
+.perfil-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.perfil-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #b41c1c;
+}
+.perfil-info {
+  flex: 1;
+  text-align: left;
+}
+.perfil-nombre {
+  font-size: 2em;
+  color: #b41c1c;
+  margin-bottom: 4px;
+}
+.perfil-email,
+.perfil-rol {
+  color: #553636;
+  margin-bottom: 2px;
+}
+.perfil-acciones {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    margin-left: 100px;
+}
+
+.perfil-detalles h3 {
+  color: #b41c1c;
+  margin-bottom: 8px;
+}
+.perfil-detalles ul {
+  list-style: none;
+  padding: 0;
+  color: #553636;
+}
+.perfil-detalles li {
+  margin-bottom: 6px;
+}
+
+.li-edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Savate:ital';
+}
+
+.h3-profile{
+    font-size: 38px;
+    font-family: 'UnifrakturCook', cursive;
+    color: #b41c1c;
+}
+
+/* FIn cuepor perfil*/
+
+/* Cuerpo de productos general */
+
+.producto-detalle {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #c27d7d;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #0002;
+  padding: 32px 24px;
+}
+.producto-imagen-botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.producto-img-grande {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #b41c1c;
+}
+.producto-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b41c1c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background-color: #8a1515;
+}
+.producto-descripcion {
+  flex: 1;
+  text-align: left;
+}
+.producto-descripcion h2 {
+  color: #b41c1c;
+  margin-bottom: 12px;
+}
+.producto-descripcion p {
+  color: #553636;
+  font-size: 18px;
+}
+
+/* FIn productos general*/
+
+/* Footer */
+
+.footer-p{
+    margin: auto;
+    font-size: 20px;
+}
+
+.contacto{
+    margin: 1px 10px 10px 0;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.redes-sociales {
+  display: flex;
+}
+.redes-sociales a {
+  color: #531717;
+  margin: 0 10px;
+  font-size: 1.6em;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+.redes-sociales a:hover {
+  color: #8a1515;
+}
+
+/* FIn footer*/
