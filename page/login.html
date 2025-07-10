@@ -3,58 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 
-    <title>Registrate</title>
-    <link rel="icon" href="./images/agni_image.ico">
-    <link rel="stylesheet" href="./style/generalStyle.css">
+    <!-- Titulo y Favicon -->
+    <title>Iniciar sesion</title>
+    <link rel="icon" href="../images/agni_image.ico">
+    <link rel="stylesheet" href="../style/generalStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
 </head>
 <body>
-
 <header class="header-home">
     <section class="encabezado">
         <img  src="./images/agni_image.png" alt="" class="imagen">
    
         <div class="titulo"> 
-            <h2>Nuevo invocador? Registrate!!!!</h2> 
+            <h2>Hola de nuevo invocador</h2> 
         </div>
      
-    
-    <dive class="navegacion">
-        <nav class="navegador">
-            <ul class="menu">
-                <li><a href="./index.html">Pagina principal</a></li>
-            </ul>
-        </nav>
-    </div>
-</section>
+    <!-- de aqui-->
+        <dive class="navegacion">
+            <nav class="navegador">
+                <ul class="menu">
+                    
+                    <li><a href="../index.html">Pagina principal</a></li>
+                </ul>
+            </nav>
+        </div>
+    <!-- hasta aqui en el momento que sea necesario sera borrado 
+        ya que solo sera necesario iniciar sesion para redireccionar al perfil
+        o a registro-->
+    </section>
 </header>
-<main class="cuerpo-register">
-    <h1 class="titulo-register">Incrementa tu poder y vuelvete un invocador</h1>
+
+<main class="cuerpo">
+
+    <section class="titulo-seccion">
+         <p class="p-titulo">Entrada al infierno, identificate!!!</p>
+    </section>
+
     <section class="formulario-seccion">
-        <!-- va a validar porque en el futuro se debera validar el mail
-         luego de validarse, debera iniciar sesion-->
-        <form action="validar.html" class="formulario">
+        <form action="./profile.html"  class="formulario">
             <label for="username">Usuario:</label>
             <input type="text" id="username" name="username" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
+            
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required>
-
-            <button class="btn-2" type="submit">Registrarse</button>
-            <p>¿Ya tienes cuenta? Inicia sesión.</p>
-            <a class="btn-2" href="login.html">Iniciar sesión</a>
+            
+            <button class="btn-2" type="submit">Iniciar sesión</button>
+            <p>No tienes cuenta? Que escoria... </p>
+            <a class="btn-2" href="./register.html">Vuelvete un invocador</a>
         </form>
-    
-</main>
+    </section>
+        
+</main>   
+
 <footer>
     <h3>© 2025 Mi Sitio Web. Todos los derechos reservados.</h3>
     <p class="footer-p">Desarrollado por Lucas Alvarez</p>
