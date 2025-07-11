@@ -1,123 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <title>Productos</title>
+  <link rel="icon" href="../images/agni_image.ico" />
 
-    <title>Productos</title>
-    <link rel="icon" href="../images/agni_image.ico">
-    <link rel="stylesheet" href="../style/generalStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Script temporal, solamente para ver la descripcion de los productos nada mas -->
-    <script src="../script/script.js" defer></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
 
-    
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="../style/generalStyle.css" />
+
+  <!-- Script para descripción -->
+  <script src="../script/script.js" defer></script>
 </head>
 <body>
-    <header class="header-home">
-    <section class="encabezado">
-        <img  src="../images/agni_image.png" alt="" class="imagen">
-   
-        <div class="titulo"> 
-            <h2>Que invocaras hoy?</h2> 
+
+  <!-- Header -->
+  <header class="header-home bg-dark py-3">
+    <section class="encabezado container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="../images/agni_image.png" alt="Logo" class="imagen me-3" />
+        <div class="titulo text-white">
+          <h2>¿Qué invocarás hoy?</h2>
         </div>
-     
-    
-    <dive class="navegacion">
+      </div>
+      <div class="navegacion mt-3 mt-md-0">
         <nav class="navegador">
-            <ul class="menu-productos">
-                <li><a href="./profile.html">Perfil</a></li>
-                <li><a href="./login.html">Iniciar sesion</a></li>
-                <li><a href="./index.html">Volver a la página principal</a></li>
-            </ul>
+          <ul class="nav menu-productos">
+            <li class="nav-item"><a class="nav-link text-white" href="./profile.html">Perfil</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="./login.html">Iniciar sesión</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="../index.html">Página principal</a></li>
+          </ul>
         </nav>
-    </div>
-</section>
-</header>
+      </div>
+    </section>
+  </header>
 
-<main class="cuerpo">
+  <!-- Main -->
+  <main class="cuerpo container my-5">
+    <h1 class="text-center titulo-productos mb-4">Productos</h1>
 
-    <h1 class="titulo-productos">Productos</h1>
-        <!-- Listado de productos -->
-        <div class="productos-lista">
-            <div class="producto">
-                <a href="../Productos/helicoptero.html"><img src="../images/trompo_helice.png" alt="Producto 4" class="producto-img"></a>
-                <div class="producto-info">
-                    <div class="producto-header">
-                        <h3 class="producto-nombre">Helice Helicoptero</h3>
-                        <button class="toggle-desc">Ver descripción</button>
-                        <button class="toggle">Agregar al carrito</button>
-                    </div>
-                    <div class="producto-desc">
-                        <p class="descripcion-p">Es un mini Helicoptero al cual se le coloca una tira, cuan fuerte tires, es tan fuerte saldra volando las helices</p>
-                    </div>
-                </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 productos-lista">
+      
+      <!-- Producto 1 -->
+      <div class="col">
+        <div class="producto card h-100 text-center">
+          <a href="../Productos/helicoptero.html">
+            <img src="../images/trompo_helice.png" alt="Helice Helicóptero" class="producto-img card-img-top">
+          </a>
+          <div class="producto-info card-body">
+            <h5 class="producto-nombre card-title">Hélice Helicóptero</h5>
+            <button class="btn btn-outline-light btn-sm toggle-desc">Ver descripción</button>
+            <button class="btn btn-light btn-sm toggle">Agregar al carrito</button>
+            <div class="producto-desc mt-2">
+              <p class="descripcion-p">Mini helicóptero que lanza hélices voladoras con una tira y fuerza aplicada.</p>
             </div>
-            <div class="producto">
-                <a href="../Productos/estuche_bey.html"><img src="../images/porta_beyblade.png" alt="Producto 3" class="producto-img"></a>
-                <div class="producto-info">
-                    <div class="producto-header">
-                        <h3 class="producto-nombre">Porta Beyblades</h3>
-                        <button class="toggle-desc">Ver descripción</button>
-                        <button class="toggle">Agregar al carrito</button>
-                    </div>
-                    <div class="producto-desc">
-                        <p class="descripcion-p">Estuche para tus Beyblades, podras portar con estilo tus mejores 3 Beys y beybatallar como Tyson o Ginga</p>
-                    </div>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="../Productos/acelerador_planetario.html"><img src="../images/acelerador_planetario.png" alt="Producto 1" class="producto-img"></a>
-                <div class="producto-info">
-                    <div class="producto-header">
-                        <h3 class="producto-nombre">Acelerador Planetario</h3>
-                        <button class="toggle-desc">Ver descripción</button>
-                        <button class="toggle">Agregar al carrito</button>
-                    </div>
-                    <div class="producto-desc">
-                        <p class="descripcion-p">Es un sistema interno de engranajes, se aplica una minima fuerza de rotacion, en este caso, la fuerza que apliques se aumenta 64 veces</p>
-                    </div>
-                </div>
-            </div>
-            <div class="producto">
-                <a href="../Productos/sable_laser.html"><img src="../images/sable_lacer.png" alt="Producto 2" class="producto-img"></a>
-                <div class="producto-info">
-                    <div class="producto-header">
-                        <h3 class="producto-nombre">Sable Laser</h3>
-                        <button class="toggle-desc">Ver descripción</button>
-                        <button class="toggle">Agregar al carrito</button>
-                    </div>
-                    <div class="producto-desc">
-                        <p class="descripcion-p">Clasico sable laser... proximamente modificaciones de diseño</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Agrega más productos según necesites -->
+      <!-- Producto 2 -->
+      <div class="col">
+        <div class="producto card h-100 text-center">
+          <a href="../Productos/estuche_bey.html">
+            <img src="../images/porta_beyblade.png" alt="Porta Beyblades" class="producto-img card-img-top">
+          </a>
+          <div class="producto-info card-body">
+            <h5 class="producto-nombre card-title">Porta Beyblades</h5>
+            <button class="btn btn-outline-light btn-sm toggle-desc">Ver descripción</button>
+            <button class="btn btn-light btn-sm toggle">Agregar al carrito</button>
+            <div class="producto-desc mt-2">
+              <p class="descripcion-p">Lleva tus 3 mejores Beyblades con estilo, ¡como Tyson o Ginga!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col">
+        <div class="producto card h-100 text-center">
+          <a href="../Productos/acelerador_planetario.html">
+            <img src="../images/acelerador_planetario.png" alt="Acelerador Planetario" class="producto-img card-img-top">
+          </a>
+          <div class="producto-info card-body">
+            <h5 class="producto-nombre card-title">Acelerador Planetario</h5>
+            <button class="btn btn-outline-light btn-sm toggle-desc">Ver descripción</button>
+            <button class="btn btn-light btn-sm toggle">Agregar al carrito</button>
+            <div class="producto-desc mt-2">
+              <p class="descripcion-p">Sistema de engranajes que multiplica la fuerza de giro por 64.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="col">
+        <div class="producto card h-100 text-center">
+          <a href="../Productos/sable_laser.html">
+            <img src="../images/sable_lacer.png" alt="Sable Láser" class="producto-img card-img-top">
+          </a>
+          <div class="producto-info card-body">
+            <h5 class="producto-nombre card-title">Sable Láser</h5>
+            <button class="btn btn-outline-light btn-sm toggle-desc">Ver descripción</button>
+            <button class="btn btn-light btn-sm toggle">Agregar al carrito</button>
+            <div class="producto-desc mt-2">
+              <p class="descripcion-p">Clásico sable láser. Próximamente, rediseño estético.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</main>
+  </main>
 
-<footer>
-    <h3>© 2025 Mi Sitio Web. Todos los derechos reservados.</h3>
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <h5>© 2025 Mi Sitio Web. Todos los derechos reservados.</h5>
     <p class="footer-p">Desarrollado por Lucas Alvarez</p>
-    <div class="redes-sociales">
-        <p class="contacto">Contacto:</p>
-             <a href="https://www.facebook.com/lucas.alvarez.330309" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/lucas-alvarez-bernardez" target="_blank" title="Linkedin"><i class="fab fa-linkedin   "></i></a>
-            <a href="https://www.instagram.com/el_mago_lucas/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="lucas.alvarez.bernardez.99@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-    </div> 
-</footer>
+    <div class="redes-sociales mt-3">
+      <p class="contacto">Contacto:</p>
+      <a href="https://www.facebook.com/lucas.alvarez.330309" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/lucas-alvarez-bernardez" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/el_mago_lucas/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:lucas.alvarez.bernardez.99@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
 
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 </html>

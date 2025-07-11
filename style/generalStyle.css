@@ -1,510 +1,557 @@
-/* Cuerpo general */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    margin: auto;
-    background-color: #553636;
-    display: block;
-    justify-content: center;
-    text-align: center;
+/* RESET Y BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p{
-    margin: 10px 0 10px 0;
-    font-size: 25px;
-    font-family: 'UnifrakturCook', cursive;
+:root {
+  --primary-color: #6a1b9a;
+  --primary-hover: #8e24aa;
+  --dark-bg: #1a1a1a;
+  --light-bg: #f5f5f5;
+  --text-dark: #222;
+  --text-light: #fff;
+  --font-main: 'Savate', sans-serif;
+  --font-title: 'UnifrakturCook', cursive;
+  --radius: 10px;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-footer{
-    background-color: #797878;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;    
-}
-
-/* FIn cuepor general*/
-
-/* Cuerpo clases generales */
-.header-home{
-    background-color: rgb(158, 150, 150);
-}
-
-.imagen{
-    width: 50px;
-    height: 50px;  
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 30px;
-}
-.encabezado{
-    display: flex;
-    margin: auto;
-    align-items: center;
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 20px;
-}
-
-.navegacion{
-    display: flex;
-    margin-left: auto;
-    color: rgb(180, 28, 28);
-}
-
-.navegador{
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.menu  {
-    display: flex;
-    justify-content: right;
-    text-decoration: none;
-    list-style: none;
-}
-
-.cuerpo{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch; 
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 900px; 
-    min-height: calc(100vh - 80px); 
-    padding: 80px 0 100px;
-    box-sizing: border-box;
-}
-
-/* FIn clases generales*/
-
-
-
-
-/*Cuerpo del index*/
-
-.h2-title-1{
-    display: flex;
-    margin: auto;
-    justify-content: center;
-}
-
-.h1-title{
-    font-size: 50px;
-    font-family: 'UnifrakturCook', cursive;
-}
-
-.presentacion{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 30px;
-}
-.container-uno{
-    color: rgb(177, 175, 175);
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    text-decoration: none;
-    list-style: none;
-    
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #b41c1c;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-.btn:hover {
-    background-color: #8a1515;
-}
-
-/* FIn index*/
-
-/*Cuerpo login*/
-
-.titulo-seccion{
-    margin-bottom: 5px;
-    text-align: center;
-    
-}
-
-.p-titulo{
-    margin: auto;
-    font-size: 40px;
-}
-
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.btn-2{
-    margin-top: 10px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #b41c1c;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-.btn-2:hover {
-    background-color: #8a1515;
-}
-
-.formulario label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #000000;
-    letter-spacing: 1px;
-    font-size: 18px;
-}
-
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario input[type="password"] {
-    width: 260px;
-    padding: 10px 14px;
-    margin-bottom: 13px;
-    border: 2px solid #b41c1c;
-    border-radius: 6px;
-    background: #fff8f8;
-    font-size: 16px;
-    color: #553636;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    outline: none;
-    box-sizing: border-box;
-}
-
-.formulario input[type="text"]:focus,
-.formulario input[type="password"]:focus {
-    border-color: #8a1515;
-    box-shadow: 0 0 0 2px #b41c1c33;
-}
-
-/* FIn login*/
-
-/* Cuerpo del producto*/
-
-.menu-productos{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    list-style: none;
-}
-.menu-productos a{
-    margin: 0 10px;
-    color: #b41c1c;
-    font-size: 20px;
-    font-family: 'UnifrakturCook', cursive;
-}
-
-.titulo-productos{
-    margin: 10px 0 10px 0;
-    font-size: 40px;
-    font-family: 'Savate:ital';
-}
-
-.productos-lista {
+body {
+  font-family: var(--font-main);
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  width: 100%;
-  max-width: 700px;
+}
+
+.mt-3{
+color: white;
+}
+
+/* ENCABEZADO GENERAL */
+.header-home {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  padding: 1rem 0;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.encabezado {
+  max-width: 1200px;
   margin: auto;
-}
-.producto {
-  display: flex;
-  align-items: flex-start;
-  background: #997373;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px #0002;
-  padding: 20px;
-  gap: 24px;
-}
-.producto-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-  background-color: #9e3838;
-}
-.producto-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.producto-header {
   display: flex;
   align-items: center;
-  gap: 16px;
-}
-.producto-nombre {
-  font-size: 22px;
-  color: #b41c1c;
-  margin: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
-.toggle {
-  background: #b41c1c;
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.toggle:hover {
-  background: #8a1515;
+.imagen {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
 }
 
-.toggle-desc {
-  background: #b41c1c;
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: background 0.2s;
+.titulo h2 {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
 }
-.toggle-desc:hover {
-  background: #8a1515;
+
+/* NAVEGACIÓN */
+.navegacion nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
-.producto-desc {
+
+.navegacion nav li {
   display: inline-block;
-  max-width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  vertical-align: top;
-  transition: max-width 0.4s cubic-bezier(.4,2,.6,1), padding 0.3s;
-  background: #330606;
-  color: #f8f8f8;
-  font-size: 10px;
-  margin-top: 10px;
-  padding: 0 0;
-  border-radius: 6px;
-}
-.producto-desc.open {
-  max-width: 350px;
-  padding: 10px 16px;
-  white-space: normal;
 }
 
-.descripcion-p{
-    font-family: 'Savate:ital';
-    font-size: 20px;
-    color: #f8f8f8;
-    margin: 0;
+.navegacion nav a {
+  color: var(--text-light);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border-radius: var(--radius);
+  transition: background-color 0.3s ease;
 }
 
-/* FIn producto*/
-
-/* Cuerpo del perfil */
-
-.menu-profile{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    list-style: none;
+.navegacion nav a:hover {
+  background-color: var(--primary-hover);
 }
-.menu-profile a{
-    margin: 0 10px;
-    color: #b41c1c;
-    font-size: 20px;
-    font-family: 'UnifrakturCook', cursive;
-}
+
+/* MAIN DE PERFIL */
 .perfil-main {
-  max-width: 500px;
-  margin: 40px auto;
-  background: #c49999;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px #0002;
-  padding: 32px 24px;
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .perfil-header {
   display: flex;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 24px;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
+
 .perfil-avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
-  border: 3px solid #b41c1c;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
 }
-.perfil-info {
-  flex: 1;
-  text-align: left;
+
+.perfil-info h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
 }
-.perfil-nombre {
-  font-size: 2em;
-  color: #b41c1c;
-  margin-bottom: 4px;
-}
+
 .perfil-email,
 .perfil-rol {
-  color: #553636;
-  margin-bottom: 2px;
+  font-size: 1rem;
+  color: #666;
 }
+
+/* ACCIONES */
 .perfil-acciones {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 24px;
-    margin-left: 100px;
-}
-
-.perfil-detalles h3 {
-  color: #b41c1c;
-  margin-bottom: 8px;
-}
-.perfil-detalles ul {
-  list-style: none;
-  padding: 0;
-  color: #553636;
-}
-.perfil-detalles li {
-  margin-bottom: 6px;
-}
-
-.li-edit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 20px;
-    font-family: 'Savate:ital';
-}
-
-.h3-profile{
-    font-size: 38px;
-    font-family: 'UnifrakturCook', cursive;
-    color: #b41c1c;
-}
-
-/* FIn cuepor perfil*/
-
-/* Cuerpo de productos general */
-
-.producto-detalle {
   display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  max-width: 900px;
-  margin: 40px auto;
-  background: #c27d7d;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px #0002;
-  padding: 32px 24px;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+  flex-wrap: wrap;
 }
-.producto-imagen-botones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-}
-.producto-img-grande {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid #b41c1c;
-}
-.producto-botones {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
+
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #b41c1c;
+  background-color: var(--primary-color);
   color: #fff;
+  padding: 0.7rem 1.5rem;
   border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
+  border-radius: var(--radius);
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background-color 0.3s ease;
 }
+
 .btn:hover {
-  background-color: #8a1515;
-}
-.producto-descripcion {
-  flex: 1;
-  text-align: left;
-}
-.producto-descripcion h2 {
-  color: #b41c1c;
-  margin-bottom: 12px;
-}
-.producto-descripcion p {
-  color: #553636;
-  font-size: 18px;
+  background-color: var(--primary-hover);
 }
 
-/* FIn productos general*/
-
-/* Footer */
-
-.footer-p{
-    margin: auto;
-    font-size: 20px;
+.form-label{
+color: white;
 }
 
-.contacto{
-    margin: 1px 10px 10px 0;
-    font-size: 20px;
-    margin-left: auto;
+/* DETALLES DEL PERFIL */
+.perfil-detalles {
+  margin-top: 2rem;
+}
+
+.h3-profile {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.li-edit {
+  margin: 0.5rem 0;
+  list-style-type: disc;
+  padding-left: 1rem;
+  color: #444;
+}
+
+/* SECCIÓN DE VALIDACIÓN */
+.cuerpo {
+  max-width: auto;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+.h1-title {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-uno {
+  margin-top: 2rem;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: auto;
+}
+
+.footer-p {
+  margin: 0.5rem 0;
 }
 
 .redes-sociales {
   display: flex;
-}
-.redes-sociales a {
-  color: #531717;
-  margin: 0 10px;
-  font-size: 1.6em;
-  transition: color 0.2s;
-  text-decoration: none;
-}
-.redes-sociales a:hover {
-  color: #8a1515;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1rem;
 }
 
-/* FIn footer*/
+.contacto {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.redes-sociales a {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  color: var(--primary-hover);
+  transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .encabezado,
+  .perfil-header,
+  .perfil-acciones {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .perfil-avatar {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ESTILOS ESPECÍFICOS PARA REGISTRO */
+
+.register-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2rem 1rem;
+}
+
+.register-box form {
+  background-color: #2b2a2a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.register-box h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.register-box input[type="text"],
+.register-box input[type="email"],
+.register-box input[type="password"] {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.register-box input:focus {
+  border-color: var(--primary-color);
+}
+
+.register-box .btn {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 480px) {
+  .register-box {
+    padding: 1rem;
+  }
+
+  .register-box form {
+    padding: 1.5rem;
+  }
+}
+
+.register-box h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.producto-desc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.producto-desc.open {
+  max-height: 200px; /* Ajustable según necesidad */
+}
+
+.descripcion-p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
+
+/* Estilo general del contenedor */
+.producto.card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.producto.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del producto */
+.producto-img {
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+}
+
+/* Nombre del producto */
+.producto-nombre {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Botones */
+.toggle-desc,
+.toggle {
+  width: 100%;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-top: 0.4rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-desc {
+  background-color: #f5f5f5;
+  color: #5c2b8c;
+  border: 1px solid #d0d0d0;
+}
+
+.toggle-desc:hover {
+  background-color: #e5e5e5;
+}
+
+.toggle {
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+}
+
+.toggle:hover {
+  background-color: #4a0677;
+}
+
+/* Descripción */
+.producto-desc {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 0.8rem;
+  text-align: left;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.producto-desc.open {
+  max-height: 300px;
+}
+
+/* Estilo del contenedor general */
+.card-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* ======================================
+   RESPONSIVE GENERAL - TODO EL SITIO
+========================================*/
+
+/* Tablets (entre 768px y 991px) */
+@media (max-width: 991px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .titulo h2 {
+    font-size: 2rem;
+  }
+
+  .navegacion nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .perfil-main {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .producto-img {
+    max-height: 100px;
+  }
+
+  .card-columns {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .btn,
+  .toggle,
+  .toggle-desc {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+/* Móviles (hasta 767px) */
+@media (max-width: 767px) {
+  body {
+    padding: 0 0.5rem;
+    font-size: 14px;
+  }
+
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .titulo h2 {
+    font-size: 1.8rem;
+  }
+
+  .imagen {
+    height: 50px;
+    width: 50px;
+  }
+
+  .navegacion nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .perfil-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .perfil-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .perfil-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .perfil-acciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil-main {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .producto.card {
+    padding: 0.8rem;
+  }
+
+  .producto-img {
+    max-height: 90px;
+    margin: auto;
+  }
+
+  .producto-nombre {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .card-columns {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+
+  .toggle,
+  .toggle-desc {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .descripcion-p {
+    font-size: 0.85rem;
+  }
+
+  .register-box {
+    padding: 1rem;
+  }
+
+  .register-box form {
+    padding: 1rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+
+  .redes-sociales {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+

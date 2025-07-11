@@ -1,12 +1,9 @@
+
+
 document.querySelectorAll('.toggle-desc').forEach(btn => {
-  btn.addEventListener('click', function() {
-    const desc = this.parentElement.nextElementSibling;
-    if (desc.classList.contains('open')) {
-      desc.classList.remove('open');
-      this.textContent = 'Ver descripción';
-    } else {
-      desc.classList.add('open');
-      this.textContent = 'Ocultar descripción';
-    }
+    btn.addEventListener('click', function () {
+      const desc = this.closest('.producto-info').querySelector('.producto-desc');
+      desc.classList.toggle('open');
+      this.textContent = desc.classList.contains('open') ? 'Ocultar descripción' : 'Ver descripción';
+    });
   });
-});
