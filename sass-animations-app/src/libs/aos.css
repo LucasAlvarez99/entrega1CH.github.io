@@ -1,0 +1,110 @@
+/* AOS - Animate On Scroll Library */
+/* Version: 2.3.1 */
+/* https://michalsnik.github.io/aos/ */
+
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+[data-aos="fade"] {
+  transform: translateY(30px);
+}
+
+[data-aos="fade"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(30px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="fade-down"] {
+  transform: translateY(-30px);
+}
+
+[data-aos="fade-down"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(-30px);
+}
+
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(30px);
+}
+
+[data-aos="fade-right"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.9);
+}
+
+[data-aos="zoom-in"].aos-animate {
+  transform: scale(1);
+}
+
+[data-aos="flip-left"] {
+  transform: rotateY(-30deg);
+}
+
+[data-aos="flip-left"].aos-animate {
+  transform: rotateY(0);
+}
+
+[data-aos="flip-right"] {
+  transform: rotateY(30deg);
+}
+
+[data-aos="flip-right"].aos-animate {
+  transform: rotateY(0);
+}
+
+[data-aos="slide-up"] {
+  transform: translateY(100%);
+}
+
+[data-aos="slide-up"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="slide-down"] {
+  transform: translateY(-100%);
+}
+
+[data-aos="slide-down"].aos-animate {
+  transform: translateY(0);
+}
+
+[data-aos="slide-left"] {
+  transform: translateX(-100%);
+}
+
+[data-aos="slide-left"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="slide-right"] {
+  transform: translateX(100%);
+}
+
+[data-aos="slide-right"].aos-animate {
+  transform: translateX(0);
+}

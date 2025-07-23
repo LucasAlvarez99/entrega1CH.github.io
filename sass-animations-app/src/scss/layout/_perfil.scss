@@ -1,0 +1,40 @@
+
+
+.perfil-main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+
+  .perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    .perfil-info h2 {
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  .perfil-acciones {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .perfil-detalles {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0.3rem 0;
+      }
+    }
+  }
+}

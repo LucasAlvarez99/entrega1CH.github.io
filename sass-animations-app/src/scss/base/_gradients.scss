@@ -1,0 +1,11 @@
+// Gradientes globales
+$gradient-primary: linear-gradient(45deg, #6a00ff, #c700ff);
+$gradient-dark: linear-gradient(120deg, #0f0f0f, #1a1a1a);
+$gradient-fire: linear-gradient(90deg, #ff6f00, #ff8f00, #ffa000);
+
+// Mixins reutilizables
+@mixin background-gradient($gradient) {
+  background-image: $gradient;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

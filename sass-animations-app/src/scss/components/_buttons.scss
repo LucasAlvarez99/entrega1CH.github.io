@@ -1,0 +1,41 @@
+@use '../base/variables';
+@use '../base/gradients';
+@use '../base/transitions';
+@use '../base/transforms';
+@use '../base/animations';
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-family: variables.$font-text;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: variables.$color-primary;
+  background-image: gradients.$gradient-primary;
+
+  // Transiciones suaves
+  @include transitions.transition(all transitions.$transition-normal ease-in-out);
+
+  // Animación inicial
+  @include animations.animate-fade-in;
+
+  // Hover animado
+  &:hover {
+    @include transforms.scale(1.05);
+    background-image: gradients.$gradient-fire;
+  }
+
+  &:active {
+    @include transforms.scale(0.95);
+    filter: brightness(0.9);
+  }
+
+  &:focus {
+    outline: 2px dashed lighten(variables.$color-primary, 20%);
+    outline-offset: 4px;
+  }
+}

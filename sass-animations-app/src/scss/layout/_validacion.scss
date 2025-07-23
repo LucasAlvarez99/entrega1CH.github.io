@@ -1,0 +1,15 @@
+@use "../base/variables";
+
+.cuerpo {
+  text-align: center;
+  padding: 2rem;
+
+  .h1-title {
+    color: variables.$color-secundario;
+    margin-bottom: 1rem;
+  }
+
+  .container-uno {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "sass-animations-app",
+  "version": "1.0.0",
+  "description": "A project demonstrating various CSS animations, transitions, transforms, gradients, and pseudo-classes using SASS.",
+  "main": "src/css/main.css",
+  "scripts": {
+    "build": "sass src/scss/main.scss src/css/main.css --style compressed",
+    "watch": "sass --watch src/scss/main.scss:src/css/main.css"
+  },
+  "dependencies": {
+    "sass": "^1.32.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "sass",
+    "animations",
+    "transitions",
+    "transforms",
+    "gradients",
+    "pseudo-classes"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

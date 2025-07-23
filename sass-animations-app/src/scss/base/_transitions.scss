@@ -1,0 +1,12 @@
+// Duraciones comunes
+$transition-fast: 0.2s;
+$transition-normal: 0.4s;
+$transition-slow: 0.6s;
+
+// Mixin general
+@mixin transition($props...) {
+  transition: $props;
+}
+
+// Uso sugerido:
+// @include transition(all $transition-normal ease-in-out);

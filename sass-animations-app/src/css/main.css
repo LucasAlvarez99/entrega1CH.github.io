@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Savate", sans-serif;
+  background-color: #f5f5f5;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.form-label, .mt-3 {
+  color: #d3d1d1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "UnifrakturCook", cursive;
+}
+
+p {
+  font-family: "Savate", sans-serif;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-family: "Savate", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #402d6b;
+  background-image: linear-gradient(45deg, #6a00ff, #c700ff);
+  transition: all 0.4s ease-in-out;
+  animation: fade-in 0.6s ease-out;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(90deg, #ff6f00, #ff8f00, #ffa000);
+}
+.btn:active {
+  transform: scale(0.95);
+  filter: brightness(0.9);
+}
+.btn:focus {
+  outline: 2px dashed rgb(106.9473684211, 75.1973684211, 178.8026315789);
+  outline-offset: 4px;
+}
+
+.formulario {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.formulario input {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.formulario .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.perfil-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-home {
+  background-color: #402d6b;
+  color: white;
+  padding: 1rem;
+}
+.header-home .encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-home .encabezado .imagen {
+  width: 60px;
+}
+.header-home .encabezado .titulo h2 {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+.header-home .encabezado .navegador ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.header-home .encabezado .navegador ul li a {
+  font-weight: bold;
+  color: white;
+}
+.header-home .encabezado .navegador ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #402d6b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+footer .redes-sociales {
+  margin-top: 0.5rem;
+}
+footer .redes-sociales i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+footer .redes-sociales i:hover {
+  color: #502236;
+}
+footer .footer-p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.perfil-main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.perfil-main .perfil-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.perfil-main .perfil-header .perfil-info h2 {
+  margin-bottom: 0.3rem;
+}
+.perfil-main .perfil-acciones {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.perfil-main .perfil-detalles {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.perfil-main .perfil-detalles ul {
+  list-style: none;
+  padding: 0;
+}
+.perfil-main .perfil-detalles ul li {
+  padding: 0.3rem 0;
+}
+
+.cuerpo {
+  text-align: center;
+  padding: 2rem;
+}
+.cuerpo .h1-title {
+  color: #522a6d;
+  margin-bottom: 1rem;
+}
+.cuerpo .container-uno {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .header-home .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .perfil-main .perfil-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .perfil-acciones {
+    flex-direction: column;
+  }
+  .formulario {
+    margin: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

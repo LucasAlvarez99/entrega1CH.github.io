@@ -1,0 +1,16 @@
+// Mixins para transformaciones
+@mixin rotate($deg) {
+  transform: rotate($deg);
+}
+
+@mixin scale($factor) {
+  transform: scale($factor);
+}
+
+@mixin skew($x, $y: 0deg) {
+  transform: skew($x, $y);
+}
+
+@mixin translate($x, $y: 0) {
+  transform: translate($x, $y);
+}

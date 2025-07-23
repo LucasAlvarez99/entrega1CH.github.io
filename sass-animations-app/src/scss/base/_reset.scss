@@ -1,0 +1,29 @@
+
+@use "./variables" ;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: variables.$font-text;
+  background-color: variables.$color-fondo;
+  color: variables.$color-texto2;
+  line-height: 1.6;
+}
+.form-label, .mt-3{
+
+  color: variables.$color-texto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

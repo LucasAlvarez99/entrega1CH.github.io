@@ -1,0 +1,21 @@
+// Base
+@use './base/variables';
+@use './base/reset';
+@use './base/typography';
+@use './base/gradients';
+@use './base/animations';
+@use './base/transitions';
+@use './base/transforms';
+
+
+// Componentes
+@use './components/buttons';
+@use './components/forms';
+@use './components/avatar';
+
+// Layout
+@use './layout/header';
+@use './layout/footer';
+@use './layout/perfil';
+@use './layout/validacion';
+@use './layout/responsive';
